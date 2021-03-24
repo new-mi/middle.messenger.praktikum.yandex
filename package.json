@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Самостоятельный проект веб-чата",
   "scripts": {
-    "start": "npm run build && node ./server.js",
-    "dev": "npm run clear && ./node_modules/.bin/parcel ./static/*.html --port 3000",
-    "build": "npm run clear && ./node_modules/.bin/parcel build ./static/*.html --no-source-maps --no-cache --public-url ./",
+    "start": "npm run clear && parcel build ./static/*.html --no-source-maps --no-cache --public-url ./ && node ./server.js",
+    "dev": "npm run clear && parcel ./static/*.html --port 3000",
+    "build": "npm run clear && parcel build ./static/*.html --no-source-maps --no-cache --public-url ./",
     "clear": "rm -rf dist .cache"
   },
   "repository": {
