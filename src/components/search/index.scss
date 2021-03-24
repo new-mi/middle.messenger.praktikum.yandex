@@ -1,0 +1,40 @@
+.search {
+  position: relative;
+  width: 100%;
+
+  &__input {
+    width: 100%;
+    border: none;
+    background-color: $bg;
+    border-radius: 4px;
+    outline: none;
+    padding: 10px 20px 10px 36px;
+
+    @include font(12, 12);
+
+    &:focus + .search__placeholder,
+    &:not(:placeholder-shown) + .search__placeholder {
+      left: 20px;
+      span {
+        display: none;
+      }
+    }
+  }
+
+  &__placeholder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include font(12, 12);
+    color: $gray;
+    transform: translate(-50%, -50%);
+    transition: opacity $transition-time;
+    opacity: 1;
+    pointer-events: none;
+
+    i {
+      margin-right: 4px;
+      @include font(16, 16);
+    }
+  }
+}

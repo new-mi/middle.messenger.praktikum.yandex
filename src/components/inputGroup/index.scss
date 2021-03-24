@@ -1,0 +1,58 @@
+.input-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  padding: 12px 0 0;
+
+  &__input {
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid $accent;
+    height: 32px;
+
+    @include font(14, 14);
+
+    &::placeholder {
+      color: $gray;
+    }
+
+    &:focus + .input-group__label-span,
+    &:not(:placeholder-shown) + .input-group__label-span {
+      top: 0;
+      @include font(12, 12);
+    }
+  }
+
+  &__label-span {
+    position: absolute;
+    left: 0;
+    top: 22px;
+    color: $gray_dark;
+    @include font(14, 14);
+    transition: all $transition-time;
+  }
+
+  &__error-message {
+    opacity: 0;
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    color: $error;
+    @include font(10, 10)
+  }
+
+  &--error {
+    padding: 12px 0 16px;
+
+    &__input {
+      color: $error;
+      border-bottom-color: $error;
+    }
+    .input-group__error-message {
+      opacity: 1;
+    }
+  }
+}
