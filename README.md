@@ -4,7 +4,7 @@
 ---
 ## [NETLIFY проекта(тут)](https://romantic-goodall-adc75f.netlify.app)
 ---
-### [Sprint 1]
+### [Sprint 1](https://github.com/new-mi/middle.messenger.praktikum.yandex/pull/1)
 ---
 ## ЗАПУСК ПРОЕКТА
 - Клонировать проект c HTTPS  
