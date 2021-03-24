@@ -1,0 +1,12 @@
+.chat-header {
+  display: flex;
+  align-items: center;
+
+  &__avatar {
+    margin-right: 10px;
+  }
+
+  &__name {
+    margin-right: auto;
+  }
+}

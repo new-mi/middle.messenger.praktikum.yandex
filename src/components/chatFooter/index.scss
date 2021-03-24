@@ -1,0 +1,13 @@
+.chat-footer {
+  display: flex;
+  align-items: center;
+
+  &__form-message {
+    flex-grow: 1;
+  }
+
+  &__actions {
+    flex-shrink: 0;
+    margin-right: 10px;
+  }
+}

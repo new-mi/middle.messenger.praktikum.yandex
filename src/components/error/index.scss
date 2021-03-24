@@ -1,0 +1,19 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__code {
+    @include font(40, 40);
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    @include font(20, 20);
+    margin-bottom: 70px;
+  }
+
+  &__link {
+    @include font(14, 14);
+  }
+}

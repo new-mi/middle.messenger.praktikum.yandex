@@ -1,0 +1,16 @@
+.link {
+  transition: all $transition-time;
+
+  &:not(.link--button):hover {
+    text-decoration: underline;
+  }
+  &--accent {
+    color: $accent
+  }
+  &--gray {
+    color: $gray;
+    &:hover {
+      color: $gray_dark;
+    }
+  }
+}
