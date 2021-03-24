@@ -2,7 +2,7 @@ const express = require('express')
 const fs = require('fs')
 
 const app = express()
-const PORT = 3000;
+const port = 3000;
 const distPath = '/dist'
 
 app.use(express.static(__dirname + distPath))
@@ -18,6 +18,6 @@ app.get('/*', (req, res) => {
   })
 })
 
-app.listen(PORT, () => {
-  console.log(`App listening at http://localhost:${PORT}`)
+app.listen(port, () => {
+  console.log(`App listening at http://localhost:${port}`)
 })
